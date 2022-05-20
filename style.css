@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(96, 115, 223);
+    color: #fff;
+}
+
+.heading-container {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    padding: 15px;
+    border: 5px solid #fff;
+    border-radius: 5px;
+}
+
+.score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 1000;
+    font-size: 1.5rem;
+}
+
+h2, #score {
+    font-size: 1.8rem;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+#score {
+    font-size: 2.5rem;
+}
+
+.game-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    margin-top: 1rem;
+}
+
+.selectable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    width: 100px;
+    height: 100px;
+    border: 7px solid #fff;
+    border-radius: 50%;
+    color: #111;
+    background-color: #fff;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all ease-in .3s;
+}
+
+.selectable:hover {
+    transform: scale(1.1);
+    background-color: rgb(244, 255, 227);
+}
+
+.pedra {
+    border-color: rgb(231, 99, 99);
+}
+
+.papel {
+    border-color: rgb(231, 218, 99);
+}
+
+.tesoura {
+    border-color: rgb(116, 182, 99);
+}
+
+.winner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 20px;
+    margin-top: 1rem;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.outcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    grid-column: span 2;
+}
+
+.hide {
+    display: none;
+    opacity: 0;
+}
+
+button {
+    border-radius: 15px;
+    margin-top: 5rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 5px 25px;
+    cursor: pointer;
+}

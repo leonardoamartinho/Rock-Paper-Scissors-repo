@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="iE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="logic.js" defer></script>  
+</head>
+<body>
+    <div class="container">
+        <div class="heading-container">
+            <h2>Rock <br> Paper <br> Scissors </h2>
+            <div class="score-container">
+                <p>Score</p>
+                <div id="score">0</div>
+            </div>
+        </div>
+        <div class="game-container">
+            <div id="pedra" class="selectable pedra">✊</div>
+            <div id="papel" class="selectable papel">✋</div>
+            <div id="tesoura" class="selectable tesoura">✌️</div>
+        </div>
+        <div class="winner-container hide">
+            <div class="selected">
+                <div id="user-results" class="selectable"></div>
+                <p>You chose</p>
+            </div>
+            <div class="selected">
+                <div id="ai-results" class="selectable"></div>
+                <p>Opponent chose</p>
+            </div>
+            <div class="outcome">
+                <h2 id="won-text"></h2>
+                <button id="reset">Play Again</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
